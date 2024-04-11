@@ -29,3 +29,16 @@
 .introduction-content {
   font-size: 16px;
 }
+
+.info-cards-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.info-cards-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
