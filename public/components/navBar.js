@@ -1,5 +1,6 @@
 const template = document.createElement('template');
 template.innerHTML = `
+  <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/navbar.css" />
 
   <div class="nav-container">

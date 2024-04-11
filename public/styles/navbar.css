@@ -1,10 +1,12 @@
 .nav-container {
-  height: 50px;
+  height: 75px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
+  padding-left: 1em;
 }
 .nav-items {
   width: 50%;
@@ -15,4 +17,8 @@
   align-items: center;
   position: absolute;
   right: 8px;
+}
+
+img {
+  height: 50px;
 }

@@ -1,6 +1,6 @@
 const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
-  <link rel="stylesheet" src="../main.js" />
+  <link rel="stylesheet" src="../footer.css" />
   <style>
     .footer-container {
       height: 182px;
