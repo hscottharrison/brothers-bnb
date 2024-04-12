@@ -19,7 +19,6 @@ infoCardTemplate.innerHTML = `
     .info-card-container:hover {
       color: #fff;
       background-color: #960000;
-      box-shadow: none;
     }
 
     .plus-button {
