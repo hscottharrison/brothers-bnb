@@ -8,12 +8,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', async(req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.get('/services', async(req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pages/services.html'));
+});
+
+app.get('/projects', async(req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pages/projects.html'));
 });
 
 let port = process.env.PORT;
 if(!port) {
-    port = 3000
+  port = 3000;
 }
 
 app.listen(port);
