@@ -7,11 +7,22 @@ infoCardTemplate.innerHTML = `
       height: 282px;
       width: 254px;
       border-bottom: 8px solid #960000;
-      filter: drop-shadow(2px 2px 4px black);
+      box-shadow: -1px 6px 5px #d9d9d9;
+      position: relative;
     }
+
+    .plus-button {
+      font-size: 32px;
+      color: #960000;
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+    }
+
   </style>
 
   <div class="info-card-container">
+    <span class="plus-button">+</span>
   <div>
 `
 
