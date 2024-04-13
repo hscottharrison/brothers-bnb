@@ -30,15 +30,24 @@
   font-size: 16px;
 }
 
-.info-cards-wrapper {
+.wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1em;
 }
 
-.info-cards-container {
+.container {
   width: 70%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
 }
