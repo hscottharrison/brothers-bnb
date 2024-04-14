@@ -20,16 +20,23 @@ dataCarouselTemplate.innerHTML = `
       font-size: 24px;
     }
 
-    .data-card p {
-      margin-top: 1em;
-      font-size: 16px;
+    @media screen and (max-width: 1100px) {
+      .data-carousel-wrapper {
+        flex-direction: column;
+      }
+      .data-card {
+        max-width: 100%;
+      }
     }
   </style>
 
   <div class="data-carousel-wrapper">
     <image-carousel></image-carousel>
     <div class="data-card">
-      
+      <h3>
+        <slot name="header" />
+      </h3>
+      <slot name="content" />
     </div>
   <div>
 `
@@ -47,23 +54,6 @@ class DataCarousel extends HTMLElement {
       const carousel = this.shadowRoot.querySelector('image-carousel');
       carousel.setAttribute('images', images);
     }
-
-    this.initData();
-  }
-
-  initData() {
-    const dataCard = this.shadowRoot.querySelector('.data-card');
-    const title = document.createElement('h3');
-    title.innerHTML = this.getAttribute('title');
-    dataCard.appendChild(title)
-
-    this.getAttribute('paragraphs')
-    .split('|')
-    .forEach(paragraph => {
-      const p = document.createElement('p');
-      p.innerHTML = paragraph;
-      dataCard.appendChild(p);
-    })
   }
 }
 

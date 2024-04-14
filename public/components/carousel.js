@@ -23,6 +23,12 @@ carouselTemplate.innerHTML = `
       from {opacity: .8}
       to {opacity: 1}
     }
+
+    @media screen and (max-width: 1100px) {
+      .carousel-container {
+        width: 100%;
+      }
+    }
   </style>
 
   <div class="carousel-container">

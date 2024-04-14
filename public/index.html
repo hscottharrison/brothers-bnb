@@ -1,11 +1,11 @@
-<!-- TOTAL TIME BILLED: 5 hours -->
+<!-- TOTAL TIME BILLED: 7 hours -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Brother's B&B</title>     
+    <title>Brother's B & B</title>     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
   <hero-container image="../assets/hero.png">
     <span slot="headerMessage">Building life-long partnerships</span>
   </hero-container>
-  <section class="main-content">
+  <main>
     <div class="introduction-wrapper">
       <div class="introduction">
         <h2 class="introduction-header">Your Trusted Partner</h2>
@@ -32,11 +32,20 @@
         <!-- Info cards dynamically rendered -->
       </div>
       <div class="container data-carousel-container">
-        <data-carousel></data-carousel>
+        <data-carousel>
+          <span slot="header">
+            Established. Dependable. Flexable.
+          </span>
+          <div slot="content">
+           <p>For over 30 years, Brothers B and B has proven itself time and time again by providing various types of clients with quality projects, making their visions a reality. We continue to offer our clients the same service, quality and integrity as our original founder. Our decades of repeat and referral business offers a testimony of our competitive pricing, quality workmanship and our commitment to excellence. Whether it is a small or large project, our team strives to create a life long client. We have managed remodel projects up to $4,000,000 across the Dallas/Ft. Worth Metroplex and our projects are bid and managed by the owners, who are hands on and easily accessible by the client.</p>
+           <br />
+           <p>Our philosophy is to develop a long term relationship with our sub-contractors, vendors and suppliers. This creates an environment of trust that helps projects run smooth and efficient. Many of our vendors have served us and the Metroplex for decades, which gives us the foundation to meet the needs of our growing client base.</p>
+          </div>
+        </data-carousel>
       </div>
     </div>
     </div>
-  </section>
+  </main>
   <bnb-footer></bnb-footer>
   <script src="./scripts/index.js"></script>
   <script src="./components/navBar.js"></script>

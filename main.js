@@ -19,6 +19,10 @@ app.get('/projects', async(req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'pages/projects.html'));
 });
 
+app.get('/about', async(req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pages/about.html'));
+});
+
 let port = process.env.PORT;
 if(!port) {
   port = 3000;

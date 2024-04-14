@@ -23,9 +23,17 @@ class Hero extends HTMLElement {
   } 
 
   connectedCallback() {
+    const heroContainer = this.shadowRoot.querySelector('.hero-container');
+    const heroShadowWrapper = this.shadowRoot.querySelector('.hero-shadow-wrapper');
+
     if(this.getAttribute('image')) {
-      this.shadowRoot.querySelector('.hero-container').style.background = `url(${this.getAttribute('image')})`;
-      this.shadowRoot.querySelector('.hero-container').style.backgroundSize = 'cover';
+      heroContainer.style.background = `url(${this.getAttribute('image')})`;
+      heroContainer.style.backgroundSize = 'cover';
+    }
+
+    if(this.getAttribute('height')) {
+      heroContainer.style.height = this.getAttribute('height');
+      heroShadowWrapper.style.height = `calc(${this.getAttribute('height')} - 75px`;
     }
   }
 }
