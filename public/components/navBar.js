@@ -4,12 +4,14 @@ template.innerHTML = `
   <link rel="stylesheet" href="../styles/navbar.css" />
 
   <div class="nav-container">
-    <img src="../assets/brothers-bnb-logo.png" />
+    <a href="/">
+      <img src="../assets/brothers-bnb-logo.png" />
+    </a>
     <div class="nav-items">
-      <span>About Us</span>
-      <span>Projects</span>
-      <span>Services</span>
-      <span>Contact</span>
+      <a href="/about">About Us</a>
+      <a href="/projects">Projects</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
     </div>
   <div>
 `

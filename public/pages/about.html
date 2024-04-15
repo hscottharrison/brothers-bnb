@@ -1,3 +1,4 @@
+<!-- TOTAL TIME BILLED: 3 HRS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/about.css" />
 </head>
 <body>
   <nav-bar></nav-bar>
@@ -20,17 +22,53 @@
   <main>
     <div class="wrapper">
       <div class="container">
-        <data-carousel images="../assets/about-image.png">
-          <span slot="header">Welcome to the trusted partner in commercial contracting in the Dallas/Fort Worth area</span>
+        <data-carousel orientation="left" images="../assets/about-image.png">
+          <span slot="header-left">Welcome to the trusted partner in commercial contracting in the Dallas/Fort Worth area</span>
+          <div slot="content-left">
+            <p>
+              Brothers B and B and our team of professional subcontractors have  been committed to serving leasing agents, property managers, building and business owners by meeting their commercial remodel and finish out needs.
+            </p>
+              <br />
+            <p>
+              Our team has been a part of the success of numerous businesses and organizations and have been linked with experienced and trusted partners to help each client complete their construction project
+            </p>
+              <br />
+            <p>
+              As a leader in commercial contracting, Brothers B and B offers quality workmanship and unparalleled commitment to our clients. Most importantly, we ensure competitive pricing for all products and services. Brothers B and B has successfully managed projects up to $4M in the Dallas/Ft. Worth Metroplex and from beginning to end, we are committed to making your project run as smooth and efficiently as possible. This will benefit you by lessening your stress as you begin the process of transitioning a client or yourself into a new space.
+            </p>
+            <button class="meet-button">
+              Meet Our Team
+            </button>
+          </div>
         </data-carousel>
+      </div>
+      <div class="values-container">
+        <img src="../assets/ruler.png" />
+        <div class="values-card">
+          <h3>Our Values</h3>
+          <p>
+            <strong>Integrity</strong> - Our company is build on a foundation of integrity. Without it we have nothing.
+          </p>
+          <p>
+            <strong>Communication</strong> - We belive that clear communication is the key to assessing any project and its potential challenges. Clarity enables us to effectively convey your vision to our team and make it a reality.
+          </p>
+          <p>
+            <strong>Leadership</strong> - We have the expertise and commitment needed to guide you through the challenges that occur on all projects.
+          </p>
+          <p>
+            <strong>Safety</strong> - A clean and safe job site is a benefit to everyone involved in the project.
+          </p>
+        </div>
       </div>
     </div>
   </main>
+  <bnb-footer></bnb-footer>
 
 
   <script src="../components/navBar.js"></script>
   <script src="../components/hero.js"></script>
   <script src="../components/carousel.js"></script>
   <script src="../components/data-carousel.js"></script>
+  <script src="../components//footer.js"></script>
 </body>
 </html>

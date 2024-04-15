@@ -9,7 +9,6 @@ dataCarouselTemplate.innerHTML = `
     }
     .data-card {
       max-width: 70%;
-      margin-left: -3em;
       z-index: 99999;
       background-color: #fff;
       padding: 3em 0 3em 3em;
@@ -18,6 +17,16 @@ dataCarouselTemplate.innerHTML = `
     .data-card h3 {
       color: #960000;
       font-size: 24px;
+    }
+
+    #data-card-left {
+      display: none;
+      margin-right: -3em;
+    }
+
+    #data-card-right {
+      display: none;
+      margin-left: -3em;
     }
 
     @media screen and (max-width: 1100px) {
@@ -31,8 +40,14 @@ dataCarouselTemplate.innerHTML = `
   </style>
 
   <div class="data-carousel-wrapper">
+    <div id="data-card-left" class="data-card">
+      <h3>
+        <slot name="header-left" />
+      </h3>
+      <slot name="content-left" />
+    </div>
     <image-carousel></image-carousel>
-    <div class="data-card">
+    <div id="data-card-right" class="data-card">
       <h3>
         <slot name="header" />
       </h3>
@@ -54,6 +69,13 @@ class DataCarousel extends HTMLElement {
       const carousel = this.shadowRoot.querySelector('image-carousel');
       carousel.setAttribute('images', images);
     }
+
+    let dataCardOrientation = 'right';
+    let orientationAttr = this.getAttribute('orientation');
+    if(orientationAttr) {
+      dataCardOrientation = orientationAttr;
+    }
+    this.shadowRoot.querySelector(`#data-card-${dataCardOrientation}`).style.display = 'block';
   }
 }
 
