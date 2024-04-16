@@ -27,7 +27,7 @@ class Hero extends HTMLElement {
     const heroShadowWrapper = this.shadowRoot.querySelector('.hero-shadow-wrapper');
 
     if(this.getAttribute('image')) {
-      heroContainer.style.background = `url(${this.getAttribute('image')})`;
+      heroContainer.style.background = ` linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.65) 100%), url(${this.getAttribute('image')})`;
       heroContainer.style.backgroundSize = 'cover';
     }
 
