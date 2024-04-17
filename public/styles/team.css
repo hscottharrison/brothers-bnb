@@ -1,9 +1,15 @@
-.bios-wrapper {
-  flex-direction: row;
-  justify-content: center;
+.bios-container {
+  width: 100%;
+  display: flex;
 }
 
-.tedshot {
-  height: 518px;
-  width: 436px;
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.team-intro {
+  width: 50%;
+  text-align: center;;
+  margin: 2em;
 }

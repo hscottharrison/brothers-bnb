@@ -1,3 +1,4 @@
+<!-- TOTAL TIME BILLED: 1 HRS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +15,56 @@
 </head>
 	<body>
 		<nav-bar></nav-bar>
+		<hero-container image="../assets/hero.png">
+			<span slot="headerMessage">Our Services</span>
+		</hero-container>
+    <div class="wrapper">
+      <intro-card>
+        <span slot="header">Delivering smoother projects through initiative, communication and teamwork</span>
+        <div slot="content">
+          <span>
+            Brothers B and B offers a range of services for commercial clients, including general contracting, design/build, and construction management.
+          </span>
+          <br />
+          <br />
+          <span>
+            Our team has handled numerous design-build projects over the years and we apply the best solutions and methods depending on the unique needs of each project. Every phase of the process is overseen and led by professionals who understand how to deliver a quality project. Whether utilizing our general contracting, design/build or construction management expertise, our services will be a benefit to clients who are undertaking any sized project. We know how hard it can be to keep large commercial projects on track and we are committed to make sure the projects we work on move forward efficiently and within budget through value engineering and timely scheduling that suit the job at hand. We follow appropriate policies and procedures and utilize key processes to ensure the best results.
+          </span>
+        </div>
+      </intro-card>
+      <div class="container">
+        <data-carousel images="../assets/project-bar-1.jpg">
+          <span slot="header">General Contracting</span>
+          <div slot="content">
+            <p>
+              Do you have plans for a commercial remodel or tenant finish out and need a contractor that can help you make a smooth transition to the building phase? Brothers B and B is a trusted partner that offers general contracting services for all commercial projects.
+            </p>
+            <button class="hover-button">
+              Learn More
+            </button>
+          </div>
+        </data-carousel>
+      </div>
+      <div class="container">
+        <data-carousel orientation="left" images="../assets/project-bar-6.jpg">
+          <span slot="header-left">Design & Build</span>
+          <div slot="content-left">
+            <p>
+              When you sign on with Brothers B and B, you get the advantage of working directly with us. When jobs are in progress and tasks are being completed by various partners, sub-contractors and vendors, you will have the advantage of working through a single contact. From the perspective of the client, this represents a considerably more convenient approach than trying to manage and coordinate the various aspects of such a project.
+            </p>
+            <button class="hover-button">
+              Learn More
+            </button>
+          </div>
+        </data-carousel>
+      </div>
+    </div>
 		<bnb-footer></bnb-footer>
 		<script src="../components/navBar.js"></script>
 		<script src="../components/hero.js"></script>
+    <script src="../components//introCard.js"></script>
+    <script src="../components/data-carousel.js"></script>
+    <script src="../components/carousel.js"></script>
 		<script src="../components/footer.js"></script>
 	</body>
 </html>

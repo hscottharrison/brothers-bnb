@@ -1,0 +1,27 @@
+.introduction-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  width: 70%;
+  margin-top: -7em;
+  height: 300px;
+  background-color: #fff;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction-header {
+  font-size: 32px;
+  font-weight:bolder;
+  color: #960000;
+  margin-bottom: 0.5em;
+}
+
+.introduction-content {
+  font-size: 16px;
+}

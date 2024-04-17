@@ -1,3 +1,4 @@
+<!-- TOTAL TIME BILLED: 4 HRS -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,28 +19,34 @@
 		<hero-container image="../assets/about-hero.png" height="90vh">
 			<span slot="headerMessage">Our Team</span>
 		</hero-container>
-    <div class="wrapper bios-wrapper">
-      <!-- <div class="container"> -->
-        <team-bio>
-          <img slot="tedshot" src="../assets/tedshot.jpg" class="tedshot" />
-          <p slot="bio">
-            After 10 years of working in construction, my brother and I made the decision to buy Brothers B and B.
-            We have now successfully woned and operated our company for over 16 years. During those years we have done
-            ground up, commercial remodels, tenant finish outs, medical, office warehouse, manufacturing, light industrial and food industry.
-            Our company is completely family owned and operated bringing a personal touch to an otherwise impersonal industry. We have return
-            clients stretching back to our beginnings and take pride in every project that we do.
-          </p>
-        </team-bio>
-        <team-bio>
-          <p slot="bio">
-            After 10 years of working in construction, my brother and I made the decision to buy Brothers B and B.
-            We have now successfully woned and operated our company for over 16 years. During those years we have done
-            ground up, commercial remodels, tenant finish outs, medical, office warehouse, manufacturing, light industrial and food industry.
-            Our company is completely family owned and operated bringing a personal touch to an otherwise impersonal industry. We have return
-            clients stretching back to our beginnings and take pride in every project that we do.
-          </p>
-        </team-bio>
-      <!-- </div> -->
+    <div class="wrapper">
+      <div class="team-intro container">
+        <h2>The team at Brother’s B and B brings decades of experience and expertise with commercial clients in general contracting, design/build and construction management</h2>
+      </div>
+      <div class="bios-container">
+          <team-bio>
+            <img slot="tedshot" src="../assets/tedshot.jpg" class="tedshot" />
+            <span slot="bio">
+              After 10 years of working in construction, my brother and I made the decision to buy Brothers B and B.
+              We have now successfully woned and operated our company for over 16 years. During those years we have done
+              ground up, commercial remodels, tenant finish outs, medical, office warehouse, manufacturing, light industrial and food industry.
+              Our company is completely family owned and operated bringing a personal touch to an otherwise impersonal industry. We have return
+              clients stretching back to our beginnings and take pride in every project that we do.
+            </span>
+            <span slot="name">Ted Wilson</span>
+            <span slot="title">Owner, Ziglar Legacy Certified</span>
+          </team-bio>
+          <team-bio>
+            <img slot="tedshot" src="../assets/jason-headshot.jpeg" />
+            <p slot="bio">
+              Jason has been involved in residential and commercial contracting for over 20 years.
+              He has been married for 20 wonderful years and has 3 amazing children.
+              His passions include encouraging others, food, travel and outdoor adventures. 
+            </p>
+            <span slot="name">Jason McCord</span>
+            <span slot="title">Owner, Ziglar Legacy Certified</span>
+          </team-bio>
+      </div>
     </div>
 		<bnb-footer></bnb-footer>
 		<script src="../components/navBar.js"></script>
