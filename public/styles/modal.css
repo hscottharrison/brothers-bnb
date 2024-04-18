@@ -1,0 +1,36 @@
+.modal-wrapper {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  z-index: 999999999;
+}
+
+.modal-container {
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+
+.modal-side {
+  height: 100%;
+  width: 50%;
+  padding: 1em;
+}
+
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  border: none;
+  background-color: #fff;
+  color: #960000;
+  float: right;
+}
