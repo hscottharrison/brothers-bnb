@@ -35,6 +35,13 @@ dataCarouselTemplate.innerHTML = `
       }
       .data-card {
         max-width: 100%;
+        padding: 0 0 3em 0;
+      }
+      #data-card-right {
+        margin-left: 0;
+      }
+      #data-card-left {
+        margin-right: 0;
       }
     }
   </style>

@@ -34,3 +34,12 @@
   color: #960000;
   float: right;
 }
+
+.modal-content h3,h2 {
+  color: #960000;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

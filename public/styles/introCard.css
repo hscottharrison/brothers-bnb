@@ -25,3 +25,9 @@
 .introduction-content {
   font-size: 16px;
 }
+
+@media screen and (max-width: 1500px) {
+  .introduction {
+    width: 90%;
+  }
+}
