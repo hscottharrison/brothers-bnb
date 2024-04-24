@@ -56,9 +56,26 @@ main {
   color: #fff;
   border: 1px solid #960000;
 }
+.project-cards-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2em;
+}
 
 @media screen and (max-width: 1500px) {
   .container {
     width: 90%;
+  }
+
+  .project-cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  .project-cards-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

@@ -1,6 +1,7 @@
 .project-card {
   height: 283px;
   width: 359px;
+  flex: 0 0 33.3333%;
 }
 
 .project-card-overlay {

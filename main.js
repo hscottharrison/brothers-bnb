@@ -36,7 +36,11 @@ app.get('/contact', async(req, res) => {
 
 // Data Requests
 app.get('/project-data', async(req, res) => {
-  res.end(JSON.stringify(projectData));
+  let response = projectData;
+  if(req.query && req.query.limit) {
+    response = projectData.slice(0, req.query.limit);
+  }
+  res.end(JSON.stringify(response));
 })
 
 let port = process.env.PORT;

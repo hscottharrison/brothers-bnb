@@ -41,5 +41,18 @@ function populateCarousel() {
 
 }
 
-addInfoCards();
-populateCarousel();
+async function fetchProjectData() {
+  const response = await (await fetch('/project-data?' + new URLSearchParams({
+    limit: 3
+  }))).json();
+  return response;
+}
+
+async function init() {
+  addInfoCards();
+  populateCarousel();
+  const projectCardData = await fetchProjectData();
+  renderProjectCards(projectCardData);
+}
+
+init();
