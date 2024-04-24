@@ -13,3 +13,12 @@ img {
   text-align: center;;
   margin: 2em;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .bios-container {
+    flex-direction: column;
+    align-items: center;
+  justify-content: space-between;
+  }
+}

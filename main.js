@@ -2,11 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
+const projectData = require("./data/projects-data");
+
 const app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
+// Page Requests
 app.get('/', async(req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
@@ -26,6 +29,15 @@ app.get('/about', async(req, res) => {
 app.get('/team', async(req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'pages/team.html'));
 });
+
+app.get('/contact', async(req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pages/contact.html'));
+});
+
+// Data Requests
+app.get('/project-data', async(req, res) => {
+  res.end(JSON.stringify(projectData));
+})
 
 let port = process.env.PORT;
 if(!port) {

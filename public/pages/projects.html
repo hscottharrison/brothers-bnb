@@ -4,19 +4,35 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Our Team - Brothers B & B</title>
+	<title>Our Work - Brothers B & B</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/projects.css" />
 </head>
 	<body>
 		<nav-bar></nav-bar>
+		<hero-container image="../assets/project-cafe-1.jpg" height="90vh">
+			<span slot="headerMessage">Projects</span>
+		</hero-container>
+		<main class="wrapper">
+			<div class="container projects-header-container">
+        <h2 class="projects-header">A leader in general contracting in the DFW area</h2>
+        <h3 class="projects-subheader">For more than 30 years, we have been dedicated to leaving a positive mark on the North Texas Landscape</h3>
+        <h2 class="projects-header">Hospitality | Office Space | Schools | Retail | Expansions | Athletic Clubs | Healthcare | Churches</h2>
+      </div>
+      <div class="container project-cards-container">
+      </div>
+		</main>
 		<bnb-footer></bnb-footer>
 		<script src="../components/navBar.js"></script>
 		<script src="../components/hero.js"></script>
+    <script src="../components/projectCard.js"></script>
 		<script src="../components/footer.js"></script>
+
+    <script src="../scripts/projects.js"></script>
 	</body>
 </html>
