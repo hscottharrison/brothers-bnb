@@ -7,7 +7,7 @@
 .introduction {
   width: 70%;
   margin-top: -7em;
-  height: 300px;
+  min-height: 300px;
   background-color: #fff;
   padding: 1.5em;
   display: flex;

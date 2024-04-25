@@ -23,3 +23,32 @@
   color: #fff;
   font-size: 64px;;
 }
+
+@media screen and (max-width: 1100px) {
+  .hero-container {
+    height: 80vh !important;
+  }
+
+  .hero-shadow-wrapper {
+    height: calc(80vh - 75px) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    height: 50vh !important;
+  }
+
+  .header-wrapper {
+    width: 100%;
+  }
+
+  .hero-header {
+    font-size: 32px;
+  }
+
+  .hero-shadow-wrapper {
+    padding-left: 1em;
+    height: calc(50vh - 75px) !important;
+  }
+}
