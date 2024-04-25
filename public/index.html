@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/home.css"/>
     <link rel="stylesheet" href="./styles/main.css"/>
@@ -25,7 +26,7 @@
         For leasing agents, property managers, business and building owners looking to initiate a new construction project, Brothers B and B is a trusted partner that delivers smoother projects with quality results. With a team of experts and a dedicated approach, we are a leader in repeat and referral business. Brothers B and B has the expertise and commitment needed to guide you through the challenges that occur during projects. Having clear communication with our clients enables us to convey your vision to our team and make it a reality. This includes all of the major and minor details involved in your project from day one. Brothers B and B will make the project smoother for our clients and provide value to the property.
       </span>
     </intro-card>
-    <div class="container info-cards-container">
+    <div id="info-cards-container" class="container project-cards-container">
       <!-- Info cards dynamically rendered -->
     </div>
     <div class="container data-carousel-container">
@@ -40,11 +41,15 @@
         </div>
       </data-carousel>
     </div>
-    <div class="container project-cards-container"></div>
+    <div class="container our-work-container">
+      <h3 class="our-work-header">What we can do</h3>
+      <div id="project-cards-container" class="project-cards-container"></div>
+    </div>
   </main>
   <bnb-footer></bnb-footer>
   <script src="./scripts/utils.js"></script>
   <script src="./scripts/index.js"></script>
+
   <script src="./components/navBar.js"></script>
   <script src="./components/hero.js"></script>
   <script src="./components/introCard.js"></script>

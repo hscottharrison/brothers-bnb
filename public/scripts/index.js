@@ -26,7 +26,7 @@ const carouselImages = [
 
 function addInfoCards() {
   infoCardData.forEach(item => {
-    const wrapper = document.querySelector('.info-cards-container');
+    const wrapper = document.querySelector('#info-cards-container');
     const infoCard = document.createElement('info-card');
     infoCard.setAttribute('subtitle', item.subtitle);
     infoCard.setAttribute('title', item.title);

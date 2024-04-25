@@ -27,4 +27,15 @@
   font-size: 16px;
 }
 
+.our-work-container {
+  flex-direction: column;
+
+}
+
+.our-work-header {
+  color: #960000;
+  font-size: 32px;
+  margin-bottom: 2em;
+}
+
 

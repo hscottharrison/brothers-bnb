@@ -1,19 +1,36 @@
 const template = document.createElement('template');
 template.innerHTML = `
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/navbar.css" />
 
-  <div class="nav-container">
-    <a href="/">
-      <img src="../assets/brothers-bnb-logo.png" />
-    </a>
-    <div class="nav-items">
-      <a id="about" href="/about">About Us</a>
-      <a id="projects" href="/projects">Projects</a>
-      <a id="services" href="/services">Services</a>
-      <a id="contact" href="/contact">Contact</a>
+  <nav class="nav-container">
+    <div>
+      <a href="/">
+        <img src="../assets/brothers-bnb-logo.png" />
+      </a>
     </div>
-  <div>
+    <div class="nav-items">
+      <a id="about" href="/about" class="nav-item">About Us</a>
+      <a id="projects" href="/projects" class="nav-item">Projects</a>
+      <a id="services" href="/services" class="nav-item">Services</a>
+      <a id="contact" href="/contact" class="nav-item">Contact</a>
+    </div>
+    <div id="nav-menu-wrapper" class="nav-closed">
+      <div class="nav-close-icon-wrapper" onClick="toggleNavMenu()">
+        <span class="material-icons">close</span>
+      </div>
+      <div class="nav-menu-item-list">
+        <a id="about" href="/about" class="nav-item">About Us</a>
+        <a id="projects" href="/projects" class="nav-item">Projects</a>
+        <a id="services" href="/services" class="nav-item">Services</a>
+        <a id="contact" href="/contact" class="nav-item">Contact</a>
+      </div>
+	  </div>
+	  <div class="nav-menu-icon">
+      <span class="material-icons">menu</span>
+    </div>
+  </nav>
 `
 
 class NavBar extends HTMLElement {
@@ -25,6 +42,21 @@ class NavBar extends HTMLElement {
 
   connectedCallback() {
     console.log(window.location.href);
+    this.shadowRoot.querySelector('.nav-menu-icon').addEventListener('click', () => {
+      this.toggleNavMenu();  
+    });
+    this.shadowRoot.querySelector('.nav-close-icon-wrapper').addEventListener('click', () => {
+      this.toggleNavMenu();
+    });
+  }
+
+  toggleNavMenu() {
+    const menu = this.shadowRoot.getElementById('nav-menu-wrapper');
+    if (menu.classList.contains('nav-open')) {
+      menu.classList.remove('nav-open');
+    } else {
+      menu.classList.add('nav-open');
+    }
   }
 }
 

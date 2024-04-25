@@ -13,6 +13,7 @@ projectCardTemplate.innerHTML = `
 `
 
 class ProjectCard extends HTMLElement {
+  static observedAttributes = ['data'];
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -32,6 +33,13 @@ class ProjectCard extends HTMLElement {
     projectCard.addEventListener('mouseleave', () => {
       overlay.style.display = 'none';
     });
+  }
+
+  async attributeChangedCallback() {
+    if (this.getAttribute('data')) {
+      const data = JSON.parse(this.getAttribute('data'));
+      console.log('DATA', data);
+    }
   }
 
 }
