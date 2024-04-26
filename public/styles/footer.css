@@ -1,5 +1,5 @@
 .footer-container {
-  height: 182px;
+  min-height: 182px;
   background-color: #960000;
   padding: 1em 2em;
   color: #fff;
@@ -18,4 +18,29 @@
 .footer-logo {
   height: 95px;
   width: 182px;
+}
+
+.nav-item {
+  width: auto;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-content-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-item {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+  }
 }
