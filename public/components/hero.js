@@ -1,4 +1,3 @@
-
 const heroTemplate = document.createElement('template');
 heroTemplate.innerHTML = `
   <link rel="stylesheet" href="../styles/main.css" />
