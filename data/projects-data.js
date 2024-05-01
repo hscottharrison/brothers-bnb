@@ -46,37 +46,7 @@ const projects = [
       "../assets/projects/cci/cci-5.jpg",
       "../assets/projects/cci/cci-6.jpg",
     ]
-  },
-  {
-    id: 3,
-    projectTitle: "CCI",
-    projectLocation: "5555 Beach, Forth Worth, TX",
-    projectType: "Office Space",
-    projectDescription: "Owned by CCI",
-    images: [
-      "../assets/projects/cci/cci-1.jpg",
-      "../assets/projects/cci/cci-2.jpg",
-      "../assets/projects/cci/cci-3.jpg",
-      "../assets/projects/cci/cci-4.jpg",
-      "../assets/projects/cci/cci-5.jpg",
-      "../assets/projects/cci/cci-6.jpg",
-    ]
-  },
-  {
-    id: 3,
-    projectTitle: "CCI",
-    projectLocation: "5555 Beach, Forth Worth, TX",
-    projectType: "Office Space",
-    projectDescription: "Owned by CCI",
-    images: [
-      "../assets/projects/cci/cci-1.jpg",
-      "../assets/projects/cci/cci-2.jpg",
-      "../assets/projects/cci/cci-3.jpg",
-      "../assets/projects/cci/cci-4.jpg",
-      "../assets/projects/cci/cci-5.jpg",
-      "../assets/projects/cci/cci-6.jpg",
-    ]
-  },
+  }
 ];
 
 module.exports = projects;

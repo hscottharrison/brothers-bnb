@@ -48,11 +48,23 @@ async function fetchProjectData() {
   return response;
 }
 
+async function fetchReviews() {
+  const response = await (await fetch('/reviews')).json();
+  return response;
+}
+
+function renderReviews(reviews) {
+  const reviewsCarousel = document.querySelector('reviews-carousel');
+  reviewsCarousel.setAttribute('reviews', JSON.stringify(reviews));
+}
+
 async function init() {
   addInfoCards();
   populateCarousel();
   const projectCardData = await fetchProjectData();
   renderProjectCards(projectCardData);
+  const reviews = await fetchReviews();
+  renderReviews(reviews);
 }
 
 init();

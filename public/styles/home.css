@@ -27,9 +27,41 @@
   font-size: 16px;
 }
 
+.our-partners-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.our-partners-subheader.our-partners-subheader {
+  font-size: 24px;
+  color: #960000;
+  margin-bottom: 1em;
+}
+.our-partners-header{
+  color: #960000;
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.our-partners-subheader {
+  font-size: 24px;
+  color: #960000;
+  margin-bottom: 1em;
+}
+.our-partners-data-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 2em;
+  height: 400px;
+}
+.our-partners-data-container {
+  width: 50%;
+  height: 100%;
+}
+
 .our-work-container {
   flex-direction: column;
-
 }
 
 .our-work-header {
@@ -37,5 +69,6 @@
   font-size: 32px;
   margin-bottom: 2em;
 }
+
 
 

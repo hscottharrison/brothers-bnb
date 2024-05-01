@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 
 const projectData = require("./data/projects-data");
+const reviews = require("./data/reviews");
 
 const app = express();
 app.use(cors());
@@ -41,7 +42,11 @@ app.get('/project-data', async(req, res) => {
     response = projectData.slice(0, req.query.limit);
   }
   res.end(JSON.stringify(response));
-})
+});
+
+app.get('/reviews', async(req, res) => {
+  res.end(JSON.stringify(reviews));
+});
 
 let port = process.env.PORT;
 if(!port) {

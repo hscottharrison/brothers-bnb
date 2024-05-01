@@ -13,9 +13,75 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/contact.css" />
 </head>
 	<body>
 		<nav-bar></nav-bar>
+		<main class="wrapper">
+      <section class="container contact-container">
+        <div class="contact-section">
+          <h2>We would love to hear from you</h2>
+          <h3>Give us a call or contact us via the form on screen. We can't wait to take the next step toward growing your business!</h3>
+          <div class="address-wrapper">
+            <div class="address-container">
+              <span>605 E Palace Parkway, Suite A4</span>
+              <span>Grand Prarie, TX 75050</span>
+              <span>972.264.1806</span>
+              <span>Office Hours: Tue. - Fri. 8am - 4pm</span>
+              <span>office@brothersbandb.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-section contact-form-section">
+          <form id="contact-form">
+            <div class="form-row">
+              <label for="contact-form-name">
+                <strong>
+                  First Name
+                </strong>
+              </label>
+              <input id="contact-form-first-name" class="form-input" type="text" name="firstName" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-name">
+                <strong>
+                  Last Name
+                </strong>
+              </label>
+              <input id="contact-form-last-name" class="form-input" type="text" name="lastName" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-email">
+                <strong>
+                  Email
+                </strong>
+              </label>
+              <input id="contact-form-email" class="form-input" type="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-form-phone">
+                <strong>
+                  Phone
+                </strong>
+              </label>
+              <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+            </div>
+            <div class="form-row">
+              <label for="contact-form-message">
+                <strong>
+                  Message
+                </strong>
+              </label>
+              <textarea id="contact-form-message" class="form-input text-area" name="message" required></textarea>
+            </div>
+            <span id="form-error-message" class="form-error-message hide">We are unable to process your request at this time. Please try again or contact us directly via phone or email.</span>
+            <button type="submit" id="contact-form-button" class="contact-form-button">
+              <span class="button__text">SUBMIT</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
 		<bnb-footer></bnb-footer>
 		<script src="../components/navBar.js"></script>
 		<script src="../components/hero.js"></script>

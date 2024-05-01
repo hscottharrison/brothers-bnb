@@ -22,6 +22,7 @@ dataCarouselTemplate.innerHTML = `
     #data-card-left {
       display: none;
       margin-right: -3em;
+      padding: 3em 3em 3em 0;
     }
 
     #data-card-right {
