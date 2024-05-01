@@ -41,12 +41,16 @@ class NavBar extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(window.location.href);
     this.shadowRoot.querySelector('.nav-menu-icon').addEventListener('click', () => {
       this.toggleNavMenu();  
     });
     this.shadowRoot.querySelector('.nav-close-icon-wrapper').addEventListener('click', () => {
       this.toggleNavMenu();
+    });
+
+    const location = window.location.pathname.slice(1);
+    this.shadowRoot.querySelectorAll(`#${location}`).forEach(item => {
+      item.classList.add('active');
     });
   }
 
