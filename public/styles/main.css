@@ -117,6 +117,15 @@ main {
   height: 206px;
 }
 
+.close-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #960000;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
 @media screen and (max-width: 1500px) {
   .container {
     width: 90%;

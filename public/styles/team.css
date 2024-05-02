@@ -1,6 +1,9 @@
 .bios-container {
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10em;
+  position: relative;
+  justify-items: center;
 }
 
 img {
