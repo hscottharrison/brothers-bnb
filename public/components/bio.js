@@ -55,13 +55,12 @@ class Bio extends HTMLElement {
     nameElement.forEach(el => el.textContent = nameAttr);
     titleElement.forEach(el => el.textContent = titleAttr);
     
-    this.shadowRoot.querySelector('.bio-button').addEventListener('click', () => {
-      this.shadowRoot.querySelector('.bio-content').style.display = 'block';
-      this.shadowRoot.querySelector('.bio-content').style.transition = 'all .3s ease';
+    this.shadowRoot.querySelector('.bio-container').addEventListener('click', () => {
+      this.shadowRoot.querySelector('.bio-content').classList.add('active');;
     });
 
     this.shadowRoot.querySelector('.close-button').addEventListener('click', () => {  
-      this.shadowRoot.querySelector('.bio-content').style.display = 'none';
+      this.shadowRoot.querySelector('.bio-content').classList.remove('active');
     });
   }
 
