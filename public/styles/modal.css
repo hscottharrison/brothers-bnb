@@ -1,5 +1,5 @@
 .modal-wrapper {
-  opacity: 0;
+  display: none;
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, .3);
@@ -7,10 +7,8 @@
   z-index: 999999999;
   left: 0;
   top: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
 }
 
 .modal-container {
@@ -24,7 +22,5 @@
 }
 
 .open {
-  opacity: 1;
-  pointer-events: all;
-  transition: all .3s ease-in;
+  display: flex;
 }
