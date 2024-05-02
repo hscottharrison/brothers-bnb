@@ -14,7 +14,6 @@ modalTemplate.innerHTML = `
 `
 
 class Modal extends HTMLElement {
-  open = false;
   wrapper;
   static observedAttributes = ['scroll'];
   constructor() {
@@ -31,9 +30,8 @@ class Modal extends HTMLElement {
     const scroll = this.getAttribute('scroll');
     const body = document.querySelector('body');
     if(scroll) {
-      this.open = true;
-      this.wrapper.classList.add('open');
       this.wrapper.style.top = `${this.getAttribute('scroll')}px`;
+      this.wrapper.classList.add('open');
       body.style.overflow = 'hidden';
       
       this.shadowRoot.querySelector('.close-button').addEventListener('click', () => {

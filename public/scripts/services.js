@@ -69,26 +69,16 @@ function openModal(serviceType) {
   const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
   const data = modalData[serviceType];
 
-  const modal = document.querySelector('content-modal');
+  const modal = document.querySelector('coda-modal');
   
-  // Remove content from previous modal
-  const spanArr = modal.querySelectorAll('span');
-  if(spanArr.length) {
-    spanArr.forEach(span => {
-      modal.removeChild(span);
-    })
-  }
   //Add Data
-  Object.keys(data).forEach((item) => {
-    if(item === 'image') return;
-    const span = document.createElement('span');
-    span.setAttribute('slot', item);
-    span.innerHTML = data[item];
-    modal.appendChild(span);
-  });
-  
-  // Add Image
-  modal.setAttribute('image', data.image);
+  const header = document.querySelector('.modal-header');
+  const subheader = document.querySelector('.modal-subheader');
+  const content = document.querySelector('.modal-content');
+
+  header.innerHTML = data.header;
+  subheader.innerHTML = data.subHeader || '';
+  content.innerHTML = data.content;
 
   //Set Scroll
   modal.setAttribute('scroll', scrollPosition);

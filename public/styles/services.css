@@ -1,3 +1,18 @@
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.modal-header {
+  color: #960000;
+}
+
+.modal-subheader {
+  color: #960000
+}
+
 .design-header {
   color: #960000;
 }

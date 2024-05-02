@@ -13,15 +13,18 @@ img {
 
 .team-intro {
   width: 50%;
-  text-align: center;;
+  text-align: center;
   margin: 2em;
 }
 
 
 @media screen and (max-width: 1000px) {
   .bios-container {
-    flex-direction: column;
-    align-items: center;
-  justify-content: space-between;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1em;
+  }
+
+  .team-intro {
+    width: 100%;
   }
 }
