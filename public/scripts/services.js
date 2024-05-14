@@ -15,9 +15,6 @@ const modalData = {
           <li>Soft demolition work</li>
           <li>Framing</li>
           <li>Drywall</li>
-          <li>Soft demolition work</li>
-          <li>Framing</li>
-          <li>Drywall</li>
           <li>Tape, Bed and Paint</li>
           <li>Ceilings</li>
           <li>Flooring</li>

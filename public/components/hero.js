@@ -32,7 +32,7 @@ class Hero extends HTMLElement {
 
     if(this.getAttribute('height')) {
       heroContainer.style.height = this.getAttribute('height');
-      heroShadowWrapper.style.height = `calc(${this.getAttribute('height')} - 75px`;
+      heroShadowWrapper.style.height = `calc(${this.getAttribute('height')} - 100px`;
     }
   }
 }

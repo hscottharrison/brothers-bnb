@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sendgrid/mail": "^8.1.3",
     "coda-ui": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",

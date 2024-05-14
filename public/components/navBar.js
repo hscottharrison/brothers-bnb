@@ -7,7 +7,7 @@ template.innerHTML = `
   <nav class="nav-container">
     <div>
       <a href="/">
-        <img src="../assets/brothers-bnb-logo.png" />
+        <img src="../assets/BrothersB&B-Vector-color.png" />
       </a>
     </div>
     <div class="nav-items">
@@ -49,6 +49,7 @@ class NavBar extends HTMLElement {
     });
 
     const location = window.location.pathname.slice(1);
+    if(!location) return;
     this.shadowRoot.querySelectorAll(`#${location}`).forEach(item => {
       item.classList.add('active');
     });

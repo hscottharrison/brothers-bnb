@@ -1,5 +1,5 @@
 .nav-container {
-  height: 75px;
+  height: 100px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
@@ -19,7 +19,8 @@
 }
 
 img {
-  height: 50px;
+  height: 100px;
+  margin-top: 1em;
 }
 
 .nav-item {

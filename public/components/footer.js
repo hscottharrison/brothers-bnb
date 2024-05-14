@@ -5,7 +5,7 @@ footerTemplate.innerHTML = `
 
   <div class="footer-container">
     <div class="footer-content-wrapper">
-      <img class="footer-logo footer-item" src="../assets/brothers-bnb-full-logo.png" />
+      <img class="footer-logo footer-item" src="../assets/BrothersB&B-Vector.png" />
       <div class="footer-item">
         <div>605 E Palace Parkway, Suite A3</div>
         <div>Grand Prarie, TX 75050</div>
