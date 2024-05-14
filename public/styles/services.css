@@ -5,6 +5,10 @@
   justify-content: flex-start;
 }
 
+.modal-content {
+  overflow-y: auto;
+}
+
 .modal-header {
   color: #960000;
 }
