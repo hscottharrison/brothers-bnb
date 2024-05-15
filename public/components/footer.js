@@ -5,7 +5,6 @@ footerTemplate.innerHTML = `
 
   <div class="footer-container">
     <div class="footer-content-wrapper">
-      <img class="footer-logo footer-item" src="../assets/BrothersB&B-Vector.png" />
       <div class="footer-item">
         <div>605 E Palace Parkway, Suite A3</div>
         <div>Grand Prarie, TX 75050</div>
@@ -13,11 +12,12 @@ footerTemplate.innerHTML = `
         <div>Office Hours: Tue. - Fri. 8am - 4pm</div>
         <div>office@brothersbandb.com</div>
       </div>
+      <img class="footer-logo footer-item" src="../assets/BrothersB&B-Vector.png" />
       <div class="footer-item footer-links">
-        <div class="nav-item">About Us</div>
-        <div class="nav-item">Our Work</div>
-        <div class="nav-item">Services</div>
-        <div class="nav-item">Contact</div>
+        <a href="/about" class="nav-item">About Us</a>
+        <a href="/projects" class="nav-item">Our Work</a>
+        <a href="/services" class="nav-item">Services</a>
+        <a href="/contact" class="nav-item">Contact</a>
       </div>
     </div>
     <div>

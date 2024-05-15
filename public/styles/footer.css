@@ -5,19 +5,23 @@
   color: #fff;
   font-size: 16px;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-content-wrapper {
   height: 90%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
   align-items: center;
-  width: 45%;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-logo {
   height: 95px;
-  width: 182px;
 }
 
 .nav-item {
@@ -30,13 +34,11 @@
 
 @media screen and (max-width: 900px) {
   .footer-content-wrapper {
-    flex-direction: column;
-    width: 100%;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .footer-item {
     margin-bottom: 1em;
-    width: 100%;
   }
 
   .footer-links {
