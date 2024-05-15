@@ -17,10 +17,25 @@ const infoCardData = [
 ];
 
 const carouselImages = [
-  '../assets/image 4.png',
-  '../assets/project-bar-1.jpg',
-  '../assets/project-bar-6.jpg',
-  '../assets/project-cafe-1.jpg'
+  "../assets/projects/frankies/frankies-1.jpg",
+  "../assets/projects/frankies/frankies-6.jpg",
+  "../assets/projects/cci/cci-2.jpg",
+  "../assets/projects/frankies/frankies-2.jpg",
+  "../assets/projects/cci/cci-2.jpg",
+  "../assets/projects/frankies/frankies-3.jpg",
+  "../assets/projects/taste-project/taste-project-4.jpg",
+  "../assets/projects/cci/cci-3.jpg",
+  "../assets/projects/taste-project/taste-project-5.jpg",
+  "../assets/projects/frankies/frankies-4.jpg",
+  "../assets/projects/cci/cci-4.jpg",
+  "../assets/projects/taste-project/taste-project-6.jpg",
+  "../assets/projects/frankies/frankies-5.jpg",
+  "../assets/projects/taste-project/taste-project-7.jpg",
+  "../assets/projects/cci/cci-5.jpg",
+  "../assets/projects/taste-project/taste-project-8.jpg",
+  "../assets/projects/taste-project/taste-project-9.jpg",
+  "../assets/projects/frankies/frankies-6.jpg",
+  "../assets/projects/cci/cci-6.jpg",
 ];
 
 
