@@ -30,7 +30,7 @@
   }
 
   .hero-shadow-wrapper {
-    height: calc(80vh - 75px) !important;
+    height: calc(80vh - 100px) !important;
   }
 }
 
@@ -49,6 +49,6 @@
 
   .hero-shadow-wrapper {
     padding-left: 1em;
-    height: calc(50vh - 75px) !important;
+    height: calc(50vh - 100px) !important;
   }
 }
